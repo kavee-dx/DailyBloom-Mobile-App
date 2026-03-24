@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animated_gradient">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:contentDescription="App Logo"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/lotus_flower" />
+
+    <!-- Slogan -->
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:fontFamily="sans-serif-light"
+        android:shadowColor="@color/primaryColor"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Bloom Every Day 🌸"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:translationY="30dp" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slogan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:alpha="0"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:shadowColor="@color/primaryColor"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:text="DailyBloom"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:translationY="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Progress Header Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+
+                <!-- Progress Circle -->
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/habitsProgressBar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="16dp"
+                    app:indicatorColor="@color/primaryColor"
+                    app:trackColor="@color/progressTrackColor"
+                    app:trackThickness="8dp"
+                    app:indicatorSize="120dp" />
+
+                <!-- Progress Text -->
+                <TextView
+                    android:id="@+id/habitsProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Progress Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Progress"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:fontFamily="sans-serif" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Add Custom Habit Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Custom Habit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/customHabitInput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Enter your custom habit..."
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addCustomHabitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:textSize="18sp"
+                        app:backgroundTint="@color/primaryColor"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Sample Habits Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Quick Add Habits"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Sample Habits Grid -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Row 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit1"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:text="💧 Drink Water"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit2"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:text="🧘 Meditate"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                        <!-- Row 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit3"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:text="🏃 Exercise"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit4"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:text="📚 Read"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                        <!-- Row 3 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit5"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:text="💊 Vitamins"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/sampleHabit6"
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:text="😴 Sleep Early"
+                                android:textSize="19sp"
+                                app:strokeColor="@color/primaryColor"
+                                app:strokeWidth="1dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- My Habits Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Habits"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Habits List -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/habitsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <!-- Empty State -->
+                <LinearLayout
+                    android:id="@+id/emptyStateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📝"
+                        android:textSize="48sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No habits yet"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add habits above to get started!"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 5-Day Progress Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Last 5 Days Progress"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Day 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/day1Date"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 15"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/day1Progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="12dp"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                    <TextView
+                        android:id="@+id/day1Percentage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="75%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!-- Day 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/day2Date"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 14"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/day2Progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="12dp"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                    <TextView
+                        android:id="@+id/day2Percentage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="60%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!-- Day 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/day3Date"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 13"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/day3Progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="12dp"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                    <TextView
+                        android:id="@+id/day3Percentage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="90%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!-- Day 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/day4Date"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 12"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/day4Progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="12dp"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                    <TextView
+                        android:id="@+id/day4Percentage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="45%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <!-- Day 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/day5Date"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 11"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/day5Progress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="12dp"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                    <TextView
+                        android:id="@+id/day5Percentage"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="80%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

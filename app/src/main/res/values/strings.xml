@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">DailyBloom2</string>
+
+    <!-- Onboarding Strings -->
+    <string name="onboarding1_image">Track your habits illustration</string>
+    <string name="onboarding1_title">Track Your Habits</string>
+    <string name="onboarding1_description">Stay consistent by tracking your daily habits easily.</string>
+
+    <string name="onboarding2_image">Log your mood illustration</string>
+    <string name="onboarding2_title">Log Your Mood</string>
+    <string name="onboarding2_description">Record your emotions with emojis and see your mood trends.</string>
+
+    <string name="onboarding3_image">Stay hydrated and motivated illustration</string>
+    <string name="onboarding3_title">Stay Hydrated &amp; Motivated</string>
+    <string name="onboarding3_description">Get hydration reminders &amp; daily wellness tips to bloom every day.</string>
+
+    <!-- Login Strings -->
+    <string name="login_welcome">Welcome Back!</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_signup_text">Don\'t have an account?</string>
+    <string name="login_signup_button">Sign Up</string>
+    <string name="login_create_account">Create Your Account</string>
+    <string name="login_tagline">Bloom Every Day 🌸</string>
+
+    <!-- Signup Strings -->
+    <string name="signup_first_name_hint">First Name</string>
+    <string name="signup_last_name_hint">Last Name</string>
+    <string name="signup_email_hint">Email</string>
+    <string name="signup_phone_hint">Phone Number</string>
+    <string name="signup_password_hint">Password</string>
+    <string name="signup_confirm_password_hint">Confirm Password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="signup_login_text">Already have an account?</string>
+    <string name="signup_login_button">Login</string>
+    <string name="signup_upload_profile">Tap to upload profile picture</string>
+    <string name="signup_terms">I agree to the Terms and Conditions</string>
+
+    <!-- Home Strings -->
+    <string name="home_welcome">Welcome to DailyBloom! 🌸</string>
+    <string name="home_good_morning">Good Morning! ☀️</string>
+    <string name="home_good_afternoon">Good Afternoon! 🌤️</string>
+    <string name="home_good_evening">Good Evening! 🌅</string>
+    <string name="home_good_night">Good Night! 🌙</string>
+    <string name="home_daily_motivation">✨ Daily Motivation</string>
+    <string name="home_todays_habits">📅 Today\'s Habits</string>
+    <string name="home_hydration_summary">💧 Hydration Summary</string>
+    <string name="home_quick_mood_log">😄 Quick Mood Log</string>
+    <string name="home_quick_actions">🎯 Quick Actions</string>
+    <string name="home_log_mood_button">Log Your Mood</string>
+    <string name="home_add_habit_button">Add Habit</string>
+    <string name="home_view_journal_button">View Journal</string>
+    <string name="home_hydration_tracker_button">Hydration Tracker</string>
+    <string name="home_habits_progress">3/5 habits completed (60%)</string>
+    <string name="home_hydration_status">6/8 glasses today</string>
+    <string name="home_last_drink">Last drink: 2 hours ago</string>
+
+    <!-- Bottom Navigation Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_hydration">Hydration</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Motivation Quotes -->
+    <string name="motivation_quote_1">Every small step counts towards your wellness journey 🌱</string>
+    <string name="motivation_quote_2">Hydration is the key to a healthy mind and body 💧</string>
+    <string name="motivation_quote_3">Track your habits, transform your life ✨</string>
+    <string name="motivation_quote_4">Your mood matters - log it and grow 🌸</string>
+    <string name="motivation_quote_5">Consistency is the mother of mastery 🎯</string>
+    <string name="motivation_quote_6">Small habits, big changes 🌟</string>
+    <string name="motivation_quote_7">Every day is a new opportunity to bloom 🌺</string>
+    <string name="motivation_quote_8">Your wellness journey starts with a single step 👣</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_opening_mood_journal">Opening mood journal...</string>
+    <string name="toast_adding_new_habit">Adding new habit...</string>
+    <string name="toast_opening_journal">Opening journal...</string>
+    <string name="toast_opening_hydration_tracker">Opening hydration tracker...</string>
+
+    <!-- Login Success Strings -->
+    <string name="login_success_title">Login Successful!</string>
+    <string name="login_success_redirecting">Redirecting to home...</string>
+    <string name="login_success_continue">Continue to Home</string>
+
+    <!-- Placeholder Strings -->
+    <string name="placeholder_welcome">Welcome!</string>
+    <string name="placeholder_habits_today">Habits Today</string>
+    <string name="placeholder_mood_score">Mood Score</string>
+    <string name="placeholder_track_habits">Track and manage your daily habits</string>
+    <string name="placeholder_log_mood">Log your daily mood and emotions</string>
+    <string name="placeholder_settings">Customize your app preferences</string>
+
+    <!-- Hydration Strings -->
+    <string name="hydration_title">Hydration Tracker</string>
+    <string name="hydration_subtitle">Stay hydrated and healthy!</string>
+    <string name="hydration_today_progress">Today\'s Progress</string>
+    <string name="hydration_add_glass">Add Glass of Water</string>
+    <string name="hydration_goal_reached">Goal Reached!</string>
+    <string name="hydration_glasses">Glasses</string>
+    <string name="hydration_water">Water</string>
+    <string name="hydration_goal">Goal</string>
+    <string name="hydration_reminders">Hydration Reminders</string>
+    <string name="hydration_enable_reminders">Enable Reminders</string>
+    <string name="hydration_reminder_interval">Reminder Interval</string>
+    <string name="hydration_interval_30min">30 min</string>
+    <string name="hydration_interval_1hour">1 hour</string>
+    <string name="hydration_interval_2hour">2 hours</string>
+    <string name="hydration_custom_interval">Custom (minutes)</string>
+    <string name="hydration_set_custom">Set</string>
+    <string name="hydration_next_reminder">Next reminder: Not set</string>
+    <string name="hydration_quick_actions">Quick Actions</string>
+    <string name="hydration_reset_day">Reset Day</string>
+    <string name="hydration_view_history">View History</string>
+    <string name="hydration_success_message">Great! Keep hydrating! 💧</string>
+    <string name="hydration_reset_success">Day reset successfully!</string>
+    <string name="hydration_history_coming_soon">History feature coming soon!</string>
+    <string name="hydration_invalid_interval">Please enter a valid number of minutes</string>
+    <string name="hydration_notification_title">Time to Hydrate!</string>
+    <string name="hydration_notification_text">Don\'t forget to drink a glass of water to stay healthy!</string>
+
+    <!-- Widget Strings -->
+    <string name="widget_description">DailyBloom Habit Progress Widget</string>
+
+</resources>

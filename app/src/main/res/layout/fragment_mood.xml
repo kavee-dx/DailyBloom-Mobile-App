@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Add Mood Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="😊 How are you feeling?"
+                    android:textColor="@color/textColorPrimary"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <!-- Emoji Selector -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Choose your mood:"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="18sp" />
+
+                <!-- Emoji Selector Grid -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <!-- Happy -->
+                        <LinearLayout
+                            android:id="@+id/emojiHappy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/emoji_button_background"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😊"
+                                android:textSize="32sp"
+                                android:layout_marginBottom="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Happy"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <!-- Excited -->
+                        <LinearLayout
+                            android:id="@+id/emojiExcited"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginHorizontal="4dp"
+                            android:background="@drawable/emoji_button_background"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="🤩"
+                                android:textSize="32sp"
+                                android:layout_marginBottom="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Excited"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <!-- Neutral -->
+                        <LinearLayout
+                            android:id="@+id/emojiNeutral"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/emoji_button_background"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😐"
+                                android:textSize="32sp"
+                                android:layout_marginBottom="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Neutral"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Row 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Sad -->
+                        <LinearLayout
+                            android:id="@+id/emojiSad"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/emoji_button_background"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😢"
+                                android:textSize="32sp"
+                                android:layout_marginBottom="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Sad"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <!-- Angry -->
+                        <LinearLayout
+                            android:id="@+id/emojiAngry"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/emoji_button_background"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="😠"
+                                android:textSize="32sp"
+                                android:layout_marginBottom="4dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Angry"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <!-- Empty space for alignment -->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Note Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:boxStrokeColor="@color/primaryColor"
+                    app:hintTextColor="@color/primaryColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/moodNoteInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add a note (optional)"
+                        android:textSize="16sp"
+                        android:maxLines="3"
+                        android:inputType="textMultiLine" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Add Mood Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addMoodBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Mood Entry"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/primaryColor"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Today's Moods Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Today's Moods"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Today's Moods List -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/todayMoodsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+                <!-- Empty State -->
+                <LinearLayout
+                    android:id="@+id/emptyStateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😊"
+                        android:textSize="48sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No moods logged today"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log your first mood above!"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Mood Trend Last 5 Days Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📈 Mood Trend (Last 5 Days)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColorPrimary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/shareMoodSummaryBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        app:icon="@drawable/ic_add"
+                        app:iconSize="16dp"
+                        app:iconGravity="textStart"
+                        app:iconPadding="4dp"
+                        app:iconTint="@color/white"
+                        app:cornerRadius="20dp"
+                        app:backgroundTint="@color/primaryColor"
+                        style="@style/Widget.Material3.Button" />
+
+                </LinearLayout>
+
+                <!-- Day 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/trendDay1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 15"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/trendEmoji1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😊"
+                        android:textSize="24sp"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/trendProgress1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                </LinearLayout>
+
+                <!-- Day 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/trendDay2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 14"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/trendEmoji2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😐"
+                        android:textSize="24sp"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/trendProgress2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                </LinearLayout>
+
+                <!-- Day 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/trendDay3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 13"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/trendEmoji3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🤩"
+                        android:textSize="24sp"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/trendProgress3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                </LinearLayout>
+
+                <!-- Day 4 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/trendDay4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 12"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/trendEmoji4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😢"
+                        android:textSize="24sp"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/trendProgress4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                </LinearLayout>
+
+                <!-- Day 5 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/trendDay5"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jan 11"
+                        android:textSize="14sp"
+                        android:textColor="@color/textColorSecondary"
+                        android:fontFamily="sans-serif" />
+
+                    <TextView
+                        android:id="@+id/trendEmoji5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😊"
+                        android:textSize="24sp"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/trendProgress5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:indicatorColor="@color/primaryColor"
+                        app:trackColor="@color/progressTrackColor"
+                        app:trackThickness="6dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>
