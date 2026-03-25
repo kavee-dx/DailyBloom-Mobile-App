@@ -11,6 +11,21 @@ This project was designed and developed using Android Studio with Kotlin, follow
 ## 🖼️ App Design Overview  
 Below are some images showcasing the DailyBloom application:  
 
+<p align="center">
+  <img src="screenshots/ss1.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss2.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss3.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss5.png" width="200"/>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="screenshots/ss6.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss7.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss9.png" width="200"/> &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/ss10.png" width="200"/>
+</p>
 
 
 ---
@@ -76,8 +91,7 @@ DailyBloom was created to solve common daily wellness challenges by helping user
 ---
 
 ## 🎥 Demo Video  
-▶️ Watch the DailyBloom demo video:  
-*(Add your video link here if available)*  
+▶️ Watch the DailyBloom demo video:  👉 [Click here to watch](https://drive.google.com/file/d/1pQLtq1gCmiN21esk-lXeycPcyh_Nk2pg/view?usp=drive_link)  
 
 ---
 
