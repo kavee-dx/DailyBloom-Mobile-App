@@ -10,12 +10,10 @@ This project was designed and developed using Android Studio with Kotlin, follow
 
 ## 🖼️ App Design Overview  
 Below are some images showcasing the DailyBloom application:  
-
-| | | | |
-|---|---|---|---|
-| <img src="screenshots/ss1.png" width="200"/> | <img src="screenshots/ss2.png" width="200"/> | <img src="screenshots/ss3.png" width="200"/> | <img src="screenshots/ss5.png" width="200"/> |
-| <img src="screenshots/ss6.png" width="200"/> | <img src="screenshots/ss7.png" width="200"/> | <img src="screenshots/ss9.png" width="200"/> | <img src="screenshots/ss10.png" width="200"/> |
-
+<br>
+<p align="center">
+  <img src="screenshots/AppHome.jpg" width="900"/>
+</p>
 
 ---
 
